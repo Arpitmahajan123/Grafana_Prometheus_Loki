@@ -1,4 +1,5 @@
 const express = require("express")
+const client = require("prom-client")
 
 const app = express();
 const PORT = process.env.PORT || 8000;
