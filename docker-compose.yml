@@ -1,0 +1,11 @@
+# version: "3.8"
+
+services:
+  prom-server:
+    image: prom/prometheus
+    ports:
+      - 9090:9090
+
+      # [ Mount The prometheus-config.yml on The /etc/....Directory ]
+    volumes:
+      - ./prometheus-config.yml:/etc/prometheus/prometheus.yml
